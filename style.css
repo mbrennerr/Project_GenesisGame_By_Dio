@@ -9,12 +9,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background: url('assets/tetrisbackground.jpg');
 }
 
 .genius {
     display: grid;
     grid-template-areas: 'verde vermelho'
     'amarelo azul';
+    filter: drop-shadow(2px 2px 5px rgba(20, 20, 20, 0.5));
     grid-gap: 10px;
     border: 1px solid #ffffff;
     background-color: #ffffff;
