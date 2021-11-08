@@ -27,13 +27,13 @@ let shuffleOrder = () => {
 
 //acende a proxima cor
 let lightColor = (element, number) => {
-    number = number * 500;
+    number = number * 900;
     setTimeout(() => {
         element.classList.add('selectedQuarter');
-    }, number - 250);
+    }, number - 500);
     setTimeout(() => {
         element.classList.remove('selectedQuarter');
-    });
+    }, number - 300);
 }
 
 //checa se os botões clicados são os mesmos da ordem gerada no jogo
@@ -91,7 +91,7 @@ let gameOver = () => {
 
 //função de inicio do jogo
 let playGame = () => {
-    alert('Bem vindo ao Gênesis! Iniciando novo jogo!');
+    alert('Bem vindo ao GENIUS! Iniciando novo jogo!');
     score = 0;
 
     nextLevel();
